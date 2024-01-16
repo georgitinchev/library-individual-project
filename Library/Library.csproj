@@ -96,12 +96,6 @@
     </Compile>
     <Compile Include="Library.cs" />
     <Compile Include="Loan.cs" />
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
     <Compile Include="ManageMembers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,9 +113,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LibForm.resx">
       <DependentUpon>LibForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageMembers.resx">
       <DependentUpon>ManageMembers.cs</DependentUpon>

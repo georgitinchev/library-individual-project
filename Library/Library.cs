@@ -35,12 +35,10 @@ namespace Library
         }
         public Book SearchBook(string title = "", string author = "", BookGenres? genre = null)
         {
-            // change so that only titles and authors that are atleast 4 characters are queried
-            const int minStringLength = 4;
             foreach (Book book in BookCatalogue)
             {
-                if ((string.IsNullOrEmpty(title) || (title.Length >= minStringLength && book.Title.ToLower().Contains(title.ToLower()))) &&
-                    (string.IsNullOrEmpty(author) || (author.Length >= minStringLength && book.Author.ToLower().Contains(author.ToLower()))) &&
+                if ((string.IsNullOrEmpty(title) || book.Title.ToLower().Contains(title.ToLower())) &&
+                    (string.IsNullOrEmpty(author) || book.Author.ToLower().Contains(author.ToLower())) &&
                     (!genre.HasValue || book.Genre == genre.Value))
                 {
                     return book;

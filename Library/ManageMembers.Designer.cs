@@ -38,53 +38,47 @@
             // 
             // currentMembersListBox
             // 
-            this.currentMembersListBox.Font = new System.Drawing.Font("Bauhaus 93", 11F);
+            this.currentMembersListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentMembersListBox.FormattingEnabled = true;
-            this.currentMembersListBox.ItemHeight = 25;
-            this.currentMembersListBox.Location = new System.Drawing.Point(24, 67);
-            this.currentMembersListBox.Margin = new System.Windows.Forms.Padding(5);
+            this.currentMembersListBox.ItemHeight = 20;
+            this.currentMembersListBox.Location = new System.Drawing.Point(12, 35);
             this.currentMembersListBox.Name = "currentMembersListBox";
-            this.currentMembersListBox.Size = new System.Drawing.Size(493, 579);
+            this.currentMembersListBox.Size = new System.Drawing.Size(248, 324);
             this.currentMembersListBox.TabIndex = 0;
             // 
             // currentMembersLabel
             // 
-            this.currentMembersLabel.Font = new System.Drawing.Font("Bauhaus 93", 11F);
-            this.currentMembersLabel.Location = new System.Drawing.Point(19, 17);
-            this.currentMembersLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.currentMembersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.currentMembersLabel.Location = new System.Drawing.Point(57, 9);
             this.currentMembersLabel.Name = "currentMembersLabel";
-            this.currentMembersLabel.Size = new System.Drawing.Size(498, 45);
+            this.currentMembersLabel.Size = new System.Drawing.Size(137, 23);
             this.currentMembersLabel.TabIndex = 1;
             this.currentMembersLabel.Text = "Current Members:";
-            this.currentMembersLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // memberNameBox
             // 
-            this.memberNameBox.Font = new System.Drawing.Font("Bauhaus 93", 11F);
-            this.memberNameBox.Location = new System.Drawing.Point(540, 211);
-            this.memberNameBox.Margin = new System.Windows.Forms.Padding(5);
+            this.memberNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.memberNameBox.Location = new System.Drawing.Point(270, 110);
             this.memberNameBox.Name = "memberNameBox";
-            this.memberNameBox.Size = new System.Drawing.Size(307, 40);
+            this.memberNameBox.Size = new System.Drawing.Size(156, 26);
             this.memberNameBox.TabIndex = 2;
             // 
             // memberNameLabel
             // 
-            this.memberNameLabel.Font = new System.Drawing.Font("Bauhaus 93", 11F);
-            this.memberNameLabel.Location = new System.Drawing.Point(531, 161);
-            this.memberNameLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.memberNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.memberNameLabel.Location = new System.Drawing.Point(266, 84);
             this.memberNameLabel.Name = "memberNameLabel";
-            this.memberNameLabel.Size = new System.Drawing.Size(321, 45);
+            this.memberNameLabel.Size = new System.Drawing.Size(160, 23);
             this.memberNameLabel.TabIndex = 3;
             this.memberNameLabel.Text = "New Member Name:";
             this.memberNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // memberNameButton
             // 
-            this.memberNameButton.Font = new System.Drawing.Font("Bauhaus 93", 11F);
-            this.memberNameButton.Location = new System.Drawing.Point(540, 273);
-            this.memberNameButton.Margin = new System.Windows.Forms.Padding(5);
+            this.memberNameButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.memberNameButton.Location = new System.Drawing.Point(270, 142);
             this.memberNameButton.Name = "memberNameButton";
-            this.memberNameButton.Size = new System.Drawing.Size(312, 95);
+            this.memberNameButton.Size = new System.Drawing.Size(156, 49);
             this.memberNameButton.TabIndex = 4;
             this.memberNameButton.Text = "Add Member";
             this.memberNameButton.UseVisualStyleBackColor = true;
@@ -92,11 +86,10 @@
             // 
             // removeSelectedMember
             // 
-            this.removeSelectedMember.Font = new System.Drawing.Font("Bauhaus 93", 11F);
-            this.removeSelectedMember.Location = new System.Drawing.Point(540, 386);
-            this.removeSelectedMember.Margin = new System.Windows.Forms.Padding(5);
+            this.removeSelectedMember.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.removeSelectedMember.Location = new System.Drawing.Point(270, 201);
             this.removeSelectedMember.Name = "removeSelectedMember";
-            this.removeSelectedMember.Size = new System.Drawing.Size(312, 108);
+            this.removeSelectedMember.Size = new System.Drawing.Size(156, 56);
             this.removeSelectedMember.TabIndex = 5;
             this.removeSelectedMember.Text = "Remove Selected Member";
             this.removeSelectedMember.UseVisualStyleBackColor = true;
@@ -104,18 +97,15 @@
             // 
             // ManageMembers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(876, 705);
+            this.ClientSize = new System.Drawing.Size(438, 367);
             this.Controls.Add(this.removeSelectedMember);
             this.Controls.Add(this.memberNameButton);
             this.Controls.Add(this.memberNameLabel);
             this.Controls.Add(this.memberNameBox);
             this.Controls.Add(this.currentMembersLabel);
             this.Controls.Add(this.currentMembersListBox);
-            this.Font = new System.Drawing.Font("Bauhaus 93", 11F);
-            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ManageMembers";
             this.Text = "ManageMembers";
             this.ResumeLayout(false);

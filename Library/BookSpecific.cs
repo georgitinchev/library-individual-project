@@ -16,8 +16,16 @@ namespace Library
         }
         private void InitializeUI()
         {
-            InitializeMembers();
-            InitializeHistory();
+            membersComboBox.Items.Clear();
+            foreach (Member member in _libForm.CurrentLibrary.Members)
+            {
+                membersComboBox.Items.Add(member.ToString());
+            }
+            listBoxHistory.Items.Clear();
+            foreach (Loan loan in _currentBook.HistoryOfLoans)
+            {
+                listBoxHistory.Items.Add(loan.ToString());
+            }
             if (_currentBook.CurrentLoan != null)
             {
                 currentBorrowerValueLabel.Text = _currentBook.CurrentLoan.Borrower.ToString();
@@ -25,22 +33,6 @@ namespace Library
             else
             {
                 currentBorrowerValueLabel.Text = "No current borrower";
-            }
-        }
-        private void InitializeMembers()
-        {
-            membersComboBox.Items.Clear();
-            foreach (Member member in _libForm.CurrentLibrary.Members)
-            {
-                membersComboBox.Items.Add(member.ToString());
-            }
-        }
-        private void InitializeHistory()
-        {
-            listBoxHistory.Items.Clear();
-            foreach (Loan loan in _currentBook.HistoryOfLoans)
-            {
-                listBoxHistory.Items.Add(loan.ToString());
             }
         }
         private void returnBookButton_Click(object sender, EventArgs e)

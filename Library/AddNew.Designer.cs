@@ -55,7 +55,6 @@ namespace Library
             // 
             // addBookGroupBox
             // 
-            this.addBookGroupBox.BackColor = System.Drawing.Color.DarkGray;
             this.addBookGroupBox.Controls.Add(this.AddTitleTextBox);
             this.addBookGroupBox.Controls.Add(this.AddAuthorTextBox);
             this.addBookGroupBox.Controls.Add(this.AddISBNTextBox);
@@ -71,77 +70,68 @@ namespace Library
             this.addBookGroupBox.Controls.Add(this.newISBNlabel);
             this.addBookGroupBox.Controls.Add(this.newAuthorLabel);
             this.addBookGroupBox.Controls.Add(this.newTitleLabel);
-            this.addBookGroupBox.Font = new System.Drawing.Font("Bauhaus 93", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBookGroupBox.Location = new System.Drawing.Point(14, 15);
-            this.addBookGroupBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.addBookGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.addBookGroupBox.Location = new System.Drawing.Point(12, 12);
             this.addBookGroupBox.Name = "addBookGroupBox";
-            this.addBookGroupBox.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.addBookGroupBox.Size = new System.Drawing.Size(873, 600);
+            this.addBookGroupBox.Size = new System.Drawing.Size(776, 480);
             this.addBookGroupBox.TabIndex = 0;
             this.addBookGroupBox.TabStop = false;
             this.addBookGroupBox.Text = "New Book Tab:";
             // 
             // AddTitleTextBox
             // 
-            this.AddTitleTextBox.Location = new System.Drawing.Point(161, 48);
-            this.AddTitleTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.AddTitleTextBox.Location = new System.Drawing.Point(143, 38);
             this.AddTitleTextBox.Name = "AddTitleTextBox";
-            this.AddTitleTextBox.Size = new System.Drawing.Size(705, 37);
+            this.AddTitleTextBox.Size = new System.Drawing.Size(627, 26);
             this.AddTitleTextBox.TabIndex = 14;
             // 
             // AddAuthorTextBox
             // 
-            this.AddAuthorTextBox.Location = new System.Drawing.Point(161, 95);
-            this.AddAuthorTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.AddAuthorTextBox.Location = new System.Drawing.Point(143, 76);
             this.AddAuthorTextBox.Name = "AddAuthorTextBox";
-            this.AddAuthorTextBox.Size = new System.Drawing.Size(705, 37);
+            this.AddAuthorTextBox.Size = new System.Drawing.Size(627, 26);
             this.AddAuthorTextBox.TabIndex = 13;
             // 
             // AddISBNTextBox
             // 
-            this.AddISBNTextBox.Location = new System.Drawing.Point(161, 144);
-            this.AddISBNTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.AddISBNTextBox.Location = new System.Drawing.Point(143, 115);
             this.AddISBNTextBox.Name = "AddISBNTextBox";
-            this.AddISBNTextBox.Size = new System.Drawing.Size(705, 37);
+            this.AddISBNTextBox.Size = new System.Drawing.Size(627, 26);
             this.AddISBNTextBox.TabIndex = 12;
             // 
             // AddDatePicker
             // 
-            this.AddDatePicker.Location = new System.Drawing.Point(161, 194);
-            this.AddDatePicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.AddDatePicker.Location = new System.Drawing.Point(143, 155);
             this.AddDatePicker.Name = "AddDatePicker";
-            this.AddDatePicker.Size = new System.Drawing.Size(705, 37);
+            this.AddDatePicker.Size = new System.Drawing.Size(627, 26);
             this.AddDatePicker.TabIndex = 11;
             // 
             // AddGenreComboBox
             // 
             this.AddGenreComboBox.FormattingEnabled = true;
-            this.AddGenreComboBox.Location = new System.Drawing.Point(161, 240);
-            this.AddGenreComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.AddGenreComboBox.Location = new System.Drawing.Point(143, 192);
             this.AddGenreComboBox.Name = "AddGenreComboBox";
-            this.AddGenreComboBox.Size = new System.Drawing.Size(705, 31);
+            this.AddGenreComboBox.Size = new System.Drawing.Size(627, 28);
             this.AddGenreComboBox.TabIndex = 10;
             // 
             // AddPagesNumeric
             // 
-            this.AddPagesNumeric.Location = new System.Drawing.Point(161, 285);
-            this.AddPagesNumeric.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.AddPagesNumeric.Location = new System.Drawing.Point(143, 228);
             this.AddPagesNumeric.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             this.AddPagesNumeric.Name = "AddPagesNumeric";
-            this.AddPagesNumeric.Size = new System.Drawing.Size(705, 37);
+            this.AddPagesNumeric.Size = new System.Drawing.Size(627, 26);
             this.AddPagesNumeric.TabIndex = 9;
             // 
             // AddBookButton
             // 
             this.AddBookButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.AddBookButton.Location = new System.Drawing.Point(161, 472);
-            this.AddBookButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.AddBookButton.Location = new System.Drawing.Point(143, 378);
             this.AddBookButton.Name = "AddBookButton";
-            this.AddBookButton.Size = new System.Drawing.Size(705, 99);
+            this.AddBookButton.Size = new System.Drawing.Size(627, 79);
             this.AddBookButton.TabIndex = 8;
             this.AddBookButton.Text = "Add Book 📗";
             this.AddBookButton.UseVisualStyleBackColor = true;
@@ -149,73 +139,72 @@ namespace Library
             // 
             // AddBookSummaryText
             // 
-            this.AddBookSummaryText.Location = new System.Drawing.Point(161, 328);
-            this.AddBookSummaryText.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.AddBookSummaryText.Location = new System.Drawing.Point(143, 262);
             this.AddBookSummaryText.Name = "AddBookSummaryText";
-            this.AddBookSummaryText.Size = new System.Drawing.Size(705, 119);
+            this.AddBookSummaryText.Size = new System.Drawing.Size(627, 96);
             this.AddBookSummaryText.TabIndex = 7;
             this.AddBookSummaryText.Text = "";
             // 
             // newSummaryLabel
             // 
             this.newSummaryLabel.AutoSize = true;
-            this.newSummaryLabel.Location = new System.Drawing.Point(45, 331);
+            this.newSummaryLabel.Location = new System.Drawing.Point(40, 265);
             this.newSummaryLabel.Name = "newSummaryLabel";
-            this.newSummaryLabel.Size = new System.Drawing.Size(96, 23);
+            this.newSummaryLabel.Size = new System.Drawing.Size(85, 20);
             this.newSummaryLabel.TabIndex = 6;
             this.newSummaryLabel.Text = "Summary:";
             // 
             // newPagesLabel
             // 
             this.newPagesLabel.AutoSize = true;
-            this.newPagesLabel.Location = new System.Drawing.Point(72, 289);
+            this.newPagesLabel.Location = new System.Drawing.Point(64, 231);
             this.newPagesLabel.Name = "newPagesLabel";
-            this.newPagesLabel.Size = new System.Drawing.Size(71, 23);
+            this.newPagesLabel.Size = new System.Drawing.Size(61, 20);
             this.newPagesLabel.TabIndex = 5;
             this.newPagesLabel.Text = "Pages:";
             // 
             // newGenreLabel
             // 
             this.newGenreLabel.AutoSize = true;
-            this.newGenreLabel.Location = new System.Drawing.Point(73, 240);
+            this.newGenreLabel.Location = new System.Drawing.Point(65, 192);
             this.newGenreLabel.Name = "newGenreLabel";
-            this.newGenreLabel.Size = new System.Drawing.Size(69, 23);
+            this.newGenreLabel.Size = new System.Drawing.Size(60, 20);
             this.newGenreLabel.TabIndex = 4;
             this.newGenreLabel.Text = "Genre:";
             // 
             // newReleaseDateLabel
             // 
             this.newReleaseDateLabel.AutoSize = true;
-            this.newReleaseDateLabel.Location = new System.Drawing.Point(10, 194);
+            this.newReleaseDateLabel.Location = new System.Drawing.Point(9, 155);
             this.newReleaseDateLabel.Name = "newReleaseDateLabel";
-            this.newReleaseDateLabel.Size = new System.Drawing.Size(138, 23);
+            this.newReleaseDateLabel.Size = new System.Drawing.Size(116, 20);
             this.newReleaseDateLabel.TabIndex = 3;
             this.newReleaseDateLabel.Text = "Release Date:";
             // 
             // newISBNlabel
             // 
             this.newISBNlabel.AutoSize = true;
-            this.newISBNlabel.Location = new System.Drawing.Point(9, 144);
+            this.newISBNlabel.Location = new System.Drawing.Point(8, 115);
             this.newISBNlabel.Name = "newISBNlabel";
-            this.newISBNlabel.Size = new System.Drawing.Size(136, 23);
+            this.newISBNlabel.Size = new System.Drawing.Size(117, 20);
             this.newISBNlabel.TabIndex = 2;
             this.newISBNlabel.Text = "13 digit ISBN: ";
             // 
             // newAuthorLabel
             // 
             this.newAuthorLabel.AutoSize = true;
-            this.newAuthorLabel.Location = new System.Drawing.Point(70, 95);
+            this.newAuthorLabel.Location = new System.Drawing.Point(62, 76);
             this.newAuthorLabel.Name = "newAuthorLabel";
-            this.newAuthorLabel.Size = new System.Drawing.Size(76, 23);
+            this.newAuthorLabel.Size = new System.Drawing.Size(63, 20);
             this.newAuthorLabel.TabIndex = 1;
             this.newAuthorLabel.Text = "Author:";
             // 
             // newTitleLabel
             // 
             this.newTitleLabel.AutoSize = true;
-            this.newTitleLabel.Location = new System.Drawing.Point(89, 51);
+            this.newTitleLabel.Location = new System.Drawing.Point(79, 41);
             this.newTitleLabel.Name = "newTitleLabel";
-            this.newTitleLabel.Size = new System.Drawing.Size(58, 23);
+            this.newTitleLabel.Size = new System.Drawing.Size(46, 20);
             this.newTitleLabel.TabIndex = 0;
             this.newTitleLabel.Text = "Title:";
             // 
@@ -226,12 +215,10 @@ namespace Library
             // 
             // AddNew
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(900, 630);
+            this.ClientSize = new System.Drawing.Size(800, 504);
             this.Controls.Add(this.addBookGroupBox);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AddNew";
             this.addBookGroupBox.ResumeLayout(false);
             this.addBookGroupBox.PerformLayout();

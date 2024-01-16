@@ -17,9 +17,9 @@ namespace Library
         private void InitializeUi()
         {
             libraryHeaderTitle.Text = $"Welcome to Library {CurrentLibrary.Name} 📖";
-            if (CurrentLibrary.BookCatalogue.Count != 0)
+            if(CurrentLibrary.BookCatalogue.Count != 0)
             {
-                PopulateBookInfo(SelectCurrentBook());
+            PopulateBookInfo(SelectCurrentBook());
             }
             PopulateComboBox();
         }
@@ -61,34 +61,9 @@ namespace Library
         }
         private void staffPanelBtn_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (staffPanel.Visible)
-                {
-                    staffPanel.Visible = false;
-                    staffPanelBtn.Text = "Show Staff Panel";
-                }
-                else
-                {
-                    Login login = new Login();
-                    if (login.ShowDialog() == DialogResult.OK)
-                    {
-                        staffPanel.Visible = true;
-                        staffPanelBtn.Text = "Hide Staff Panel";
-                    }
-                    else
-                    {
-                        MessageBox.Show("Login failed. Please try again.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            staffPanel.Visible = !staffPanel.Visible;
+            staffPanelBtn.Text = staffPanel.Visible ? "Hide staff panel 🔒" : "Show staff panel 🔓";
         }
-
-
         private void searchBtn_Click(object sender, EventArgs e)
         {
             try
@@ -97,10 +72,6 @@ namespace Library
                 string title = searchTitleTextBox.Text;
                 BookGenres? genre = searchGenreComboBox.SelectedItem as BookGenres?;
                 Book book = CurrentLibrary.SearchBook(title, author, genre);
-                if (book != null)
-                {
-                    MessageBox.Show("Book found.", "Search Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
                 int index = CurrentLibrary.BookCatalogue.IndexOf(book);
                 UpdateCurrentIndex(index);
                 PopulateBookInfo(book);
@@ -146,9 +117,10 @@ namespace Library
             pagesLabel.Text = "";
             bookDescriptionLabel.Text = "";
         }
+
         private void CheckIfLibraryNull()
         {
-            if (CurrentLibrary == null)
+            if(CurrentLibrary == null)
             {
                 MessageBox.Show("No library loaded.", "Library Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -174,7 +146,7 @@ namespace Library
         }
         private void buttonShowLoanDetails_Click(object sender, EventArgs e)
         {
-            if (SelectCurrentBook() == null)
+            if(SelectCurrentBook() == null)
             {
                 MessageBox.Show("No book selected");
                 return;
