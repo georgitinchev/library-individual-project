@@ -1,0 +1,55 @@
+<diagram program="umletino" version="15.1"><zoom_level>15</zoom_level><element><id>UMLClass</id><coordinates><x>345</x><y>105</y><w>270</w><h>360</h></coordinates><panel_attributes>Library
+-
+- nameOfLibrary: string
+- bookCatalogue: List&lt;Book&gt;
+- membersList: List&lt;Member&gt;
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>735</x><y>585</y><w>285</w><h>315</h></coordinates><panel_attributes>Loan
+-
+- id: int
+- borrower: Member
+- borrowDate: Date
+- returnDate: null
+-
++ FinishLoan()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>735</x><y>105</y><w>300</w><h>360</h></coordinates><panel_attributes>Book
+-
+- title: string
+- author: string
+- description: string
+- ISBN13: int
+- pageNum: int
+- releaseDate: Date
+- BookGenres: genre
+- currentLoan: Loan
+- historyOfLoans: List&lt;Loan&gt;
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>345</x><y>585</y><w>270</w><h>315</h></coordinates><panel_attributes>Member
+-
+- name: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>270</y><w>165</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+catalogue *</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>795</x><y>450</y><w>150</w><h>165</h></coordinates><panel_attributes>lt=&lt;&lt;-
+current loan 
+
+
+
+0... 1</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>930</x><y>450</y><w>180</w><h>165</h></coordinates><panel_attributes>lt=&lt;&lt;-
+history of loans
+
+
+
+*</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>735</y><w>165</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+1      borrower</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>Relation</id><coordinates><x>465</x><y>450</y><w>75</w><h>165</h></coordinates><panel_attributes>lt=&lt;&lt;-
+has 
+
+
+
+*</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1155</x><y>195</y><w>135</w><h>180</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+BookGenres
+-
+Fantasy
+ScienceFiction
+Thriller
+Romance
+NonFiction
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>255</y><w>165</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+has     1</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element></diagram>
