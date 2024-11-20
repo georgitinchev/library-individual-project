@@ -32,7 +32,9 @@ A simple library management application built with C# WinForms. It allows users 
 
 ## Screenshots
 
-*Insert images here of the app's interface.*
+![Library App 1](images/library_app1.png)
+![Library App 2](images/library_app2.png)
+![Library App 3](images/library_app3.png)
 
 ## Contributing
 
